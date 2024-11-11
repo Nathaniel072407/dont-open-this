@@ -1,0 +1,213 @@
+/* Box Sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #eaeaea;
+}
+
+/* Header Styles */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 1s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+/* Navigation Styles */
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #45a049;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Homepage Styles */
+.homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.homepage-text {
+    max-width: 500px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.5s; /* Delay for text animation */
+}
+
+.lago {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleIn 1s forwards;
+    animation-delay: 0.7s; /* Delay for image animation */
+}
+
+.homepage h2 {
+    margin: 0 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+/* About Me Styles */
+.about-me {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo-container {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #4CAF50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.about-text h2 {
+    margin: 0 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.about-text h3 {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #666;
+}
+
+.about-text p {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* List Styles */
+.about-text ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #444;
+}
+
+.about-text ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
